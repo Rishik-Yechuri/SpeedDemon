@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeedDemon", "SpeedDemon\SpeedDemon\SpeedDemon.csproj", "{F619326C-5256-4C83-BBE9-0FA5CCD2BA4F}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "SpeedDemonContent", "SpeedDemon\SpeedDemonContent\SpeedDemonContent.contentproj", "{B880B4D9-EED6-446E-862F-0D5A025FB77C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F619326C-5256-4C83-BBE9-0FA5CCD2BA4F}.Debug|x86.ActiveCfg = Debug|x86
+		{F619326C-5256-4C83-BBE9-0FA5CCD2BA4F}.Debug|x86.Build.0 = Debug|x86
+		{F619326C-5256-4C83-BBE9-0FA5CCD2BA4F}.Release|x86.ActiveCfg = Release|x86
+		{F619326C-5256-4C83-BBE9-0FA5CCD2BA4F}.Release|x86.Build.0 = Release|x86
+		{B880B4D9-EED6-446E-862F-0D5A025FB77C}.Debug|x86.ActiveCfg = Debug|x86
+		{B880B4D9-EED6-446E-862F-0D5A025FB77C}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
