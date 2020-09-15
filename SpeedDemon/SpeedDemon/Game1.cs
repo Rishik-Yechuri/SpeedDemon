@@ -18,7 +18,10 @@ namespace SpeedDemon
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-
+        Rectangle rectangle;
+        Texture2D texture;
+        double xPos;
+        double yPos;
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -34,7 +37,9 @@ namespace SpeedDemon
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            xPos = 550;
+            yPos = 200;
+            rectangle = new Rectangle((int)xPos, (int)yPos, 210, 166);
             base.Initialize();
         }
 
@@ -48,6 +53,7 @@ namespace SpeedDemon
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            texture = this.Content.Load<Texture2D>("snail");
         }
 
         /// <summary>
@@ -71,7 +77,8 @@ namespace SpeedDemon
                 this.Exit();
 
             // TODO: Add your update logic here
-
+            xPos -= .1;
+            rectangle = new Rectangle((int)xPos,(int)yPos, 210, 166);
             base.Update(gameTime);
         }
 
@@ -84,7 +91,9 @@ namespace SpeedDemon
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-
+            spriteBatch.Begin();
+            spriteBatch.Draw(texture, rectangle, Color.White);
+            spriteBatch.End();
             base.Draw(gameTime);
         }
     }
